@@ -41,7 +41,7 @@
                     </div>
                     <div class="ms-auto d-none d-lg-block">
                         <a href="/register" class="nav-item text-bold" style="margin-right: 25px !important;">Register</a>
-                        <a href="/login" class="btn btn-primary rounded-pill py-2 px-3">Login</a>
+                        <a href="/login" class="btn btn-primary rounded-pill py-2 px-3 text-capitalize">Login</a>
                     </div>
                 </div>
             </nav>

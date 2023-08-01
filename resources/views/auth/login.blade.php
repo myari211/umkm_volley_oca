@@ -83,6 +83,11 @@
                                 </div>
                             </div>
                         </form>
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="{{ route('redirect_google') }}">Google</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
