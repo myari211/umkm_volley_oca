@@ -5,7 +5,7 @@
             #show_bg_2 {
                 background-image:
                 linear-gradient(to right, rgba(246, 211, 101, 0.2), rgba(243, 99, 59, 0.5)),
-                url('{{ asset("images/login.jpg") }}');
+                url('{{ asset("img/properties/login.jpg") }}');
                 width: 100%;
                 height: 100%;
                 background-size: cover;
@@ -28,7 +28,7 @@
     <body>
         <div class="d-none d-lg-block">
             <div class="row h-100">
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     {{-- <img src="{{ asset('images/login.jpg') }}" class="w-100 h-100"> --}}
                     <div id="show_bg_2" class="d-flex justify-content-center align-items-center">
                         <div>
