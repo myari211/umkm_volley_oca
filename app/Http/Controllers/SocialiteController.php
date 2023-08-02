@@ -108,13 +108,13 @@ class SocialiteController extends Controller
     }
 
     public function loginUsers($googleEmail) {
-        $user = User::find($googleEmail);
+        // $user = User::find($googleEmail)->first();
 
-        if(isset($user)) {
-            Auth::login($user);
-            $request->session->regenerate();
-        }
+        $user = User::where('email', $googleEmail)->firstOrFail();
 
-        return "Berhasil Login";
+        Auth::login($user->id);
+
+
+        return redirect('/home');
     }
 }

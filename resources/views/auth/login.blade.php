@@ -50,42 +50,53 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex align-items-center">
+                <div class="col-lg-8 d-flex align-items-center">
                     <div class="container">
                         <form method="post" action="{{ route('login') }}">
                             @csrf
                             <div class="row d-flex justify-content-center">
-                                <div class="col-lg-8">
+                                <div class="col-lg-7">
                                     <span style="font-weight:700; font-size:50px;">Sign <span class="deep-orange-text">In</span></span>
                                 </div>
                             </div>
                             <div class="row mt-5 d-flex justify-content-center">
-                                <div class="col-lg-8">
+                                <div class="col-lg-7">
                                     <div class="md-form md-outline input-with-post-icon m-0">
                                         <input type="email" class="form-control rounded-0" name="email" id="email" placeholder="Email" style="height:50px;">
-                                        <i class="fas fa-envelope input-prefix"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="row mt-2 d-flex justify-content-center">
-                                <div class="col-lg-8">
+                                <div class="col-lg-7">
                                     <div class="md-form md-outline input-with-post-icon m-0" style="height:50px;">
                                         <input type="password" class="form-control rounded-0" name="password" id="password" style="height:50px" placeholder="Password">
-                                        <i class="fas fa-lock input-prefix"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="row mt-5 d-flex justify-content-center">
-                                <div class="col-lg-8">
-                                    <button type="submit" class="btn btn-deep-orange btn-block rounded-pill z-depth-0">
+                                <div class="col-lg-7 d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-primary rounded-pill z-depth-0 text-capitalize pr-4 pl-4" style="height: 50px;">
                                         Sign In
                                     </button>
                                 </div>
                             </div>
                         </form>
-                        <div class="row">
-                            <div class="col-12">
-                                <a href="{{ route('redirect_google') }}">Google</a>
+                        <div class="row mt-5 d-flex justify-content-center">
+                            <div class="col-7 d-flex justify-content-center">
+                                <small class="text-muted" style="font-weight: 600">Or Login With</small>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center mt-3">
+                            <div class="col-7 d-flex justify-content-center">
+                                <button type="button" class="btn btn-md btn-danger text-capitalize" onclick="location.href='{{ route('redirect_google') }}'">
+                                    <i class="fab fa-google mr-2"></i>
+                                    Google
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row mt-5 d-flex justify-content-center">
+                            <div class="col-7 d-flex justify-content-center">
+                                <span style="font-weight: 500">Belum punya akun? <a class="text-primary" style="font-weight: 600" href="/register">Daftar Disini</a></span>
                             </div>
                         </div>
                     </div>
